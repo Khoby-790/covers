@@ -17,7 +17,9 @@ This app was built with Expo. In other to run it install Expo Client App from ei
 * Log Daily Symptoms - Record your symptoms daily. Details on shortness of breath, aches, dry coughs, fever, etc. This helps in remote health assessment.
 * Administration of Self-Assessment
 
-# Access to my Expo Account
+# Identity
+`ID: 10689100`
 
-`email: ebaidoo79@gmail.com
-`password: republican79
+# Access to my Expo Account
+`email: ebaidoo79@gmail.com`
+`password: republican79`

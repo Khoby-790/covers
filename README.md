@@ -16,3 +16,8 @@ This app was built with Expo. In other to run it install Expo Client App from ei
 * Access News, Country Measures and Updates on COVID-19 - Get access to latest news on the pandemic. Data on new infections, recoveries, deaths as well as situational updates.
 * Log Daily Symptoms - Record your symptoms daily. Details on shortness of breath, aches, dry coughs, fever, etc. This helps in remote health assessment.
 * Administration of Self-Assessment
+
+# Access to my Expo Account
+
+`email: ebaidoo79@gmail.com
+`password: republican79

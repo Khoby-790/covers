@@ -53,6 +53,9 @@ export default function Onboarding({ navigation }) {
             }
           </Text>
           <View style={{ paddingTop: 40, flexDirection: 'row' }}>
+            <View>
+              <Image />
+            </View>
             <TextInput
               value={phoneNumber}
               onChangeText={phoneNumber => {

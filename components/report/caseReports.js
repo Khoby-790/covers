@@ -34,7 +34,7 @@ export default function CaseReports({ reportFor, contact, description, date }) {
     });
 
     return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => removeCaseReport()}>
         <Animated.View style={[styles.deleteItem, { opacity: opacity }]}>
           <Animated.Text
             style={{
@@ -42,7 +42,7 @@ export default function CaseReports({ reportFor, contact, description, date }) {
               fontWeight: 'bold',
               transform: [{ scale }],
             }}>
-            Delete
+            Remove
           </Animated.Text>
         </Animated.View>
       </TouchableOpacity>
@@ -77,7 +77,7 @@ export default function CaseReports({ reportFor, contact, description, date }) {
           height: 65,
           top: height * 0.58,
         }}
-        buttonColor={color.buttonColor}
+        buttonColor={"#000"}
         iconTextColor={colors.white}
         visible={isFocused}
         iconTextComponent={<Ionicons name="ios-add" />}

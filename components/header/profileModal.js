@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import Constants from 'expo-constants';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-import { TouchableOpacity, TextInput } from 'react-native-gesture-handler';
+import { TouchableOpacity, TextInput, ScrollView } from 'react-native-gesture-handler';
 import CountryPicker from 'react-native-country-picker-modal';
 import RadioButtonRN from 'radio-buttons-react-native';
 import { width, height } from '../../constants/constants';
@@ -59,7 +59,7 @@ export default function ProfileModal({ visible, cancel }) {
         visible={visible}
         presentationStyle={'pageSheet'}
         animationType={'slide'}>
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>Profile</Text>
             <TouchableOpacity onPress={cancel}>
@@ -170,7 +170,7 @@ export default function ProfileModal({ visible, cancel }) {
               )}
             </TouchableOpacity>
           </View>
-        </View>
+        </ScrollView>
       </Modal>
     </KeyboardAvoidingView>
   );
@@ -181,6 +181,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: Constants.statusBarHeight,
     paddingHorizontal: 20,
+    marginBottom: 10
   },
   header: {
     flexDirection: 'row',

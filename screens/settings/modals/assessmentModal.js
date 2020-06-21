@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Modal } from 'react-native';
+import { View, Text, StyleSheet, Modal, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
@@ -13,11 +13,12 @@ export default function AssessmentModal({ close, visible }) {
       visible={visible}
       presentationStyle={'pageSheet'}
       animationType={'slide'}>
-      <View style={styles.container}>
-        <View
+      <ScrollView style={styles.container}>
+        <ScrollView
           style={{
             borderBottomWidth: StyleSheet.hairlineWidth,
             borderColor: colors.borderColor,
+            paddingBottom: 20,
           }}>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>Self Assessment</Text>
@@ -25,7 +26,7 @@ export default function AssessmentModal({ close, visible }) {
               <Ionicons name="ios-close" size={40} />
             </TouchableOpacity>
           </View>
-        </View>
+        </ScrollView>
         <View style={{ marginVertical: 20 }}>
           <Text style={styles.mainTitle}>Getting Started!</Text>
           <Text style={styles.mainText}>
@@ -49,14 +50,14 @@ export default function AssessmentModal({ close, visible }) {
             </Text>
           </View>
         </View>
-        <View style={{ marginTop: height * 0.34 }}>
+        <View style={{ marginTop: height * 0.27 }}>
           <TouchableOpacity style={styles.button}>
             <Text style={([styles.mainTitle], { color: colors.white })}>
               Start Assessment...
             </Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </ScrollView>
     </Modal>
   );
 }
